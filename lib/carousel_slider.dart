@@ -1,11 +1,11 @@
 // Re-export carousel_slider with proper aliasing to avoid conflicts
-import 'package:carousel_slider/carousel_slider.dart' hide CarouselController;
+import 'package:carousel_slider/carousel_slider.dart' as carousel;
 import 'package:carousel_slider/carousel_controller.dart' as carousel_ctrl;
-import 'package:flutter/material.dart' hide CarouselController;
 
-// Export the main carousel slider widget
-export 'package:carousel_slider/carousel_slider.dart' hide CarouselController;
-export 'package:carousel_slider/carousel_controller.dart';
+// Export the carousel slider widget and options
+export 'package:carousel_slider/carousel_options.dart';
 
-// Create a type alias for the controller to avoid naming conflicts
-typedef CarouselSliderController = carousel_ctrl.CarouselControllerImpl;
+// Create type aliases to avoid naming conflicts with Flutter's Material Carousel
+typedef CarouselSlider = carousel.CarouselSlider;
+typedef CarouselSliderController = carousel_ctrl.CarouselController;
+typedef CarouselOptions = carousel.CarouselOptions;
