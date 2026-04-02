@@ -17,6 +17,7 @@ dependencies:
   badges: ^3.1.2
   carousel_slider: ^4.2.1
   shared_preferences: ^2.2.2
+  shared_preferences_web: ^2.2.1
   intl: ^0.18.1
 
 dev_dependencies:
